@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="560" viewBox="0 0 1280 560" role="img" aria-labelledby="title desc">
   <title id="title">Obsidian SecondBrain</title>
-  <desc id="desc">An abstract knowledge network connects captures, sources, projects, and prompts to a central knowledge core.</desc>
+  <desc id="desc">An abstract knowledge network connects captures, sources, projects, and System Prompts to a central knowledge core.</desc>
   <defs>
     <linearGradient id="background" x1="80" y1="40" x2="1200" y2="520" gradientUnits="userSpaceOnUse">
       <stop stop-color="#11182D"/>
@@ -57,7 +57,7 @@
       <text x="380" y="27" text-anchor="middle" fill="#D8DEF2" font-size="13" font-weight="650" letter-spacing="1.2">REUSE</text>
     </g>
 
-    <text x="74" y="466" fill="#7783A3" font-size="14" font-weight="500" letter-spacing="0.5">Sources / Knowledge / Projects / Prompt Templates</text>
+    <text x="74" y="466" fill="#7783A3" font-size="14" font-weight="500" letter-spacing="0.5">Sources / Knowledge / Projects / System Prompts</text>
   </g>
 
   <g fill="none" stroke-linecap="round">
@@ -101,7 +101,7 @@
     <g>
       <circle cx="1111" cy="445" r="29" fill="#10202F" stroke="#32C4BA" stroke-width="1.5"/>
       <path d="M1102 437h18v14h-10l-5 5v-5h-3z" fill="none" stroke="#59DDD2" stroke-width="2" stroke-linejoin="round"/>
-      <text x="1111" y="493" text-anchor="middle" fill="#AEB8D7">PROMPTS</text>
+      <text x="1111" y="493" text-anchor="middle" fill="#AEB8D7" font-size="9.5" letter-spacing="0.75">SYSTEM PROMPTS</text>
     </g>
     <g>
       <circle cx="777" cy="435" r="29" fill="#112034" stroke="#4EAFD1" stroke-width="1.5"/>

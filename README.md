@@ -1,7 +1,7 @@
 # Obsidian SecondBrain
 
 <p align="center">
-  <img src=".github/assets/obsidian-secondbrain-hero.svg" alt="Obsidian SecondBrain: everyday captures flowing into a connected knowledge core" width="100%">
+  <img src=".github/assets/obsidian-secondbrain-hero.svg" alt="Obsidian SecondBrain: everyday captures flowing into connected knowledge and reusable System Prompts" width="100%">
 </p>
 
 <p align="center">
@@ -17,7 +17,7 @@
 
 An agent-maintained Obsidian vault that turns low-friction captures into connected, verifiable, reusable knowledge.
 
-Drop rough notes, URLs, screenshots, PDFs, videos, or work updates into `00 Inbox`. Then ask Codex, Claude Code, or Cursor to organize the vault. The included skill reads the source material, removes noise, checks for duplicates, updates canonical notes, connects related ideas, and turns suitable Knowledge into ready-to-paste prompts for other AI applications.
+Drop rough notes, URLs, screenshots, PDFs, videos, or work updates into `00 Inbox`. Then ask Codex, Claude Code, or Cursor to organize the vault. The included skill reads the source material, removes noise, checks for duplicates, updates canonical notes, connects related ideas, and turns suitable Knowledge into ready-to-paste System Prompts for future related work in other AI applications.
 
 The repository is a reusable system, not a published personal vault. Personal notes and attachments are ignored by Git by default; only the empty folder structure, agent instructions, skills, scripts, and project documentation are versioned.
 
@@ -29,9 +29,9 @@ The repository is a reusable system, not a published personal vault. Personal no
 - Compares fragments with existing notes instead of producing isolated summaries.
 - Removes copied pages, comment dumps, OCR noise, tracking links, and processing text after useful content is safely integrated.
 - Maintains traceable sources, uncertainty, meaningful wikilinks, and compact Obsidian properties.
-- Produces prompt templates that can be pasted directly into another AI. They use the current conversation, attachments, or workspace automatically and ask only the minimum question when essential context is missing.
+- Produces Knowledge System Prompts that can be pasted directly into another AI's system or custom-instructions field. They carry reusable reasoning, evidence standards, and boundaries into future related requests.
 - Organizes courses and recurring work reviews, including evidence-backed development recommendations and a current technology radar.
-- Re-runs safely: unchanged input should not create duplicate notes, sections, links, or prompts.
+- Re-runs safely: unchanged input should not create duplicate notes, sections, links, or System Prompts.
 
 ## What the knowledge graph can look like
 
@@ -45,7 +45,7 @@ flowchart LR
     B --> C["10 Sources<br/>Concise evidence + provenance"]
     C --> D["20 Knowledge<br/>Reusable understanding"]
     D --> E["30 Projects<br/>A small real-world experiment"]
-    D --> F["Prompt Template<br/>Ready to paste into another AI"]
+    D --> F["Knowledge System Prompt<br/>Paste into system instructions"]
     E -->|observations| D
 ```
 
@@ -59,8 +59,8 @@ graph TD
     K1 -->|applied in| P1["Project: Fictional balcony herb garden"]
     K2 -->|applied in| P1
     P1 -->|produces observations| K2
-    K1 -->|generates| T1["Prompt: Review a planting plan"]
-    K2 -->|generates| T2["Prompt: Diagnose a watering routine"]
+    K1 -->|generates| T1["System Prompt: Evidence-based planting guidance"]
+    K2 -->|generates| T2["System Prompt: Adaptive plant-care guidance"]
 ```
 
 ## Requirements
@@ -147,7 +147,7 @@ Open the repository in Cursor and ask Agent to organize the Inbox. Cursor reads 
 | --- | --- |
 | `00 Inbox` | Unprocessed captures and unresolved material |
 | `10 Sources` | Concise, traceable external evidence |
-| `20 Knowledge` | Reusable synthesis, decisions, models, and prompt templates |
+| `20 Knowledge` | Reusable synthesis, decisions, models, and Knowledge System Prompts |
 | `30 Projects/Courses` | Course hubs and lesson notes |
 | `30 Projects/Work Reviews` | Periodic work evidence and annual overviews |
 | `90 Archive` | Retained material removed from daily use |
@@ -174,15 +174,16 @@ Refactor all existing Sources and Knowledge from scratch, merge overlaps, remove
 
 The last request is intentionally explicit because a full refactor can rewrite many notes. Ordinary organization processes only the current Inbox snapshot and affected canonical notes.
 
-## Ready-to-paste prompts
+## Knowledge System Prompts
 
-When a Knowledge note describes a repeatable task, the organizer maintains one `Prompt Template` section, or the localized equivalent already used by the vault. The prompt is designed to be copied as-is:
+When a Knowledge note contains reusable decision rules or domain guidance, the organizer maintains one `System Prompt` section. Copy it as-is into another AI's system or custom-instructions field; it then guides future related requests instead of performing one immediate task.
 
-- no fill-in placeholders;
-- reads the current chat, selected material, attachments, or workspace first;
-- performs all work that can be inferred safely;
-- asks one natural question, or at most three short questions, only when critical context is truly absent;
-- preserves the safety, evidence, and authorization boundaries of the underlying Knowledge.
+- defines the AI's role, applicable scope, reasoning process, evidence standards, and boundaries;
+- uses subsequent chat, selected material, attachments, or workspace context when relevant;
+- adapts to the future request instead of forcing every interaction into one fixed output;
+- requires no fill-in placeholders or editing before use;
+- asks only the minimum question when a future request lacks critical context;
+- stays synchronized with the underlying Knowledge and is revised in place rather than duplicated.
 
 ## Privacy by default
 

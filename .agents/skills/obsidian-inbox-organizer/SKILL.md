@@ -1,6 +1,6 @@
 ---
 name: obsidian-inbox-organizer
-description: Safely initialize this workflow in an Obsidian vault, incrementally distill loose captures into connected knowledge, or refactor existing Sources and Knowledge when explicitly requested. Handles URLs, images, attachments, verification, deduplication, canonical notes, meaningful links, noise removal, work reviews, and reusable prompt templates. Use when the user asks to initialize or organize an Inbox, vault, knowledge base, work review, or fragmented captures.
+description: Safely initialize this workflow in an Obsidian vault, incrementally distill loose captures into connected knowledge, or refactor existing Sources and Knowledge when explicitly requested. Handles URLs, images, attachments, verification, deduplication, canonical notes, meaningful links, noise removal, work reviews, and reusable Knowledge System Prompts. Use when the user asks to initialize or organize an Inbox, vault, knowledge base, work review, or fragmented captures.
 ---
 
 # Obsidian Knowledge Organizer
@@ -21,8 +21,8 @@ Turn low-friction captures into verifiable, connected, revisable knowledge inste
 4. Find the canonical note before writing. Update an existing Knowledge note for the same reusable question; keep a single external item as a Source until it supports a reusable conclusion.
 5. Once useful content and provenance are safely integrated, remove copied full text, comment threads, OCR dumps, processing prompts, UI chrome, duplicates, and tracking or signed URLs. Do not delete attachments without explicit permission.
 6. Search and reuse topics and entities. Add a wikilink only when its supporting, complementing, conflicting, or applied relationship is clear.
-7. When Knowledge supports a repeatable AI task, maintain one ready-to-paste `## Prompt Template` section, or the vault's existing localized equivalent. The prompt must use current conversation, attachments, or workspace context automatically, include relevant boundaries and output requirements, and ask only the minimum question when critical input is absent. Do not require placeholder fields.
-8. Verify sources, attachments, properties, links, Inbox outcomes, prompt-template uniqueness, and Base views. Re-run the inventory; unchanged input must produce no further edits.
+7. When Knowledge contains reusable decision rules or domain guidance, maintain one ready-to-paste `## System Prompt` section, or the vault's existing localized equivalent. Write it as persistent system-level behavior for future related requests, not as a command to perform one immediate task. It must carry the note's reasoning framework, evidence standards, boundaries, and response behavior; use later conversation, attachments, or workspace context when relevant; and ask only the minimum question when a future request lacks critical input. Do not require placeholder fields.
+8. Verify sources, attachments, properties, links, Inbox outcomes, System Prompt uniqueness, and Base views. Re-run the inventory; unchanged input must produce no further edits.
 
 Read [image-optimization.md](references/image-optimization.md) when processing convertible raster images. Read [technology-radar.md](references/technology-radar.md) only when organizing work reviews or refreshing an annual technology radar.
 

@@ -58,22 +58,23 @@ Name Knowledge after the concept, question, or decision likely to be retrieved l
 - `## Core Understanding`: the current synthesis and its boundary conditions.
 - `## Source Comparison`: agreement, conflict, evidence strength, and anecdotal limitations.
 - `## Applications`: decisions, steps, checklists, or next experiments.
-- `## Prompt Template`: a ready-to-paste prompt when the knowledge supports a repeatable AI task.
+- `## System Prompt`: a ready-to-paste behavior layer when the Knowledge contains reusable decision rules or domain guidance.
 - `## Open Questions`: gaps, unstable facts, and items requiring user experience or further evidence.
 - `## Sources`: links to Sources, Projects, work reviews, and necessary primary references.
 
 User drafts may be normalized into clear language and structure. Preserve URLs, code, filenames, necessary quotations, and proper nouns. Keep exact user wording only when tone, commitment, or personal experience affects interpretation; label it as original user context.
 
-## Ready-to-paste prompt templates
+## Knowledge System Prompts
 
-A prompt template is the executable interface to a Knowledge note, not a required decoration.
+A System Prompt is the executable interface to a Knowledge note, not a required decoration or a one-off user request. It is copied into another AI's system or custom-instructions field so the Knowledge governs future related requests.
 
-- Create it only when a specific AI task and useful output can be identified.
-- Make it work immediately after copy and paste. It should inspect the current conversation, selected text, attachments, or workspace instead of requiring the user to complete placeholder fields.
-- If critical context is unavailable, ask one natural question or at most three short questions at once. Do not ask the user to reformat information the AI can already infer.
-- Include task-specific boundaries, non-invention or authorization constraints, and an output shape when those change quality or safety.
+- Create it only when the note provides a reusable way to reason, decide, review, advise, or act across future requests.
+- Make it work immediately after copy and paste without starting an unsolicited task. Define the AI's role, applicable scope, decision process, evidence and uncertainty rules, safety or authorization boundaries, and useful response behavior.
+- Tell the AI to use subsequent conversation, selected text, attachments, or workspace context when relevant. If a future request lacks critical context, ask one natural question or at most three short questions at once; do not require the user to reformat information the AI can infer.
+- Preserve flexibility: adapt the response to the future request instead of forcing every interaction into one fixed deliverable. Specify an output shape only when it materially improves quality or safety.
 - Keep it model-neutral unless the task genuinely depends on a product-specific capability.
-- Merge synonymous sections such as “Reusable Prompt,” “Goal Template,” or “Agent Task Template” into one prompt-template section. When the underlying knowledge changes, revise it in place rather than appending another version.
+- Do not refer to the Knowledge note as if the receiving AI can read it. Include the actionable rules the AI actually needs, while avoiding a full duplicate of the note.
+- Merge legacy sections such as “Prompt Template,” “Reusable Prompt,” “Goal Template,” or “Agent Task Template” into one System Prompt section. When the underlying knowledge changes, revise it in place rather than appending another version.
 
 ## Reliability rules
 

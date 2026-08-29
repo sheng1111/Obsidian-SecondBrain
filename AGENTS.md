@@ -12,8 +12,8 @@
 - When the user asks to organize the Inbox, vault, sources, knowledge, or captures, use `.agents/skills/obsidian-inbox-organizer/SKILL.md` and its relevant references.
 - Organizing must improve knowledge, not merely move or summarize files. Clarify concepts, compare evidence, connect affected Sources, Knowledge, Projects, and work reviews, research missing facts when needed, and update the canonical note.
 - Distinguish user statements, source claims, verified facts, AI synthesis, and inference. Do not turn a partial anecdote into a general rule or present AI-generated understanding as the user's belief.
-- Search before writing. Re-running the organizer on unchanged input must not create duplicate notes, sections, properties, links, or prompt templates.
-- When a Knowledge note supports a repeatable AI task, maintain one ready-to-paste prompt template. It should use the current conversation, attachments, or workspace automatically and ask only the minimum question when essential context is missing. Do not require users to fill placeholder fields.
+- Search before writing. Re-running the organizer on unchanged input must not create duplicate notes, sections, properties, links, or System Prompts.
+- When a Knowledge note contains reusable decision rules or domain guidance, maintain one ready-to-paste `System Prompt`. It is a persistent behavior layer for future related requests, not a one-off task command. It should carry the Knowledge note's reasoning framework, evidence standards, boundaries, and response behavior; use later conversation, attachments, or workspace context when relevant; and ask only the minimum question when a future request lacks essential context. Do not require placeholder fields.
 
 ## Vault model
 
