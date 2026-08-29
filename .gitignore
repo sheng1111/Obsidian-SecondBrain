@@ -1,0 +1,32 @@
+# Obsidian application state and local recovery data
+/.obsidian/
+/.trash/
+**/.DS_Store
+
+# Personal vault content stays local. Keep only the reusable directory skeleton.
+/00 Inbox/*
+!/00 Inbox/.gitkeep
+/10 Sources/*
+!/10 Sources/.gitkeep
+/20 Knowledge/*
+!/20 Knowledge/.gitkeep
+/30 Projects/*
+!/30 Projects/.gitkeep
+!/30 Projects/Courses/
+/30 Projects/Courses/*
+!/30 Projects/Courses/.gitkeep
+!/30 Projects/Work Reviews/
+/30 Projects/Work Reviews/*
+!/30 Projects/Work Reviews/.gitkeep
+/90 Archive/*
+!/90 Archive/.gitkeep
+/99 System/*
+!/99 System/.gitkeep
+/Attachments/*
+!/Attachments/.gitkeep
+
+# Local agent settings or credentials must never be committed.
+.env
+.env.*
+!.env.example
+*.local.json

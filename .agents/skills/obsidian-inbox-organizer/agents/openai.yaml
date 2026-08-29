@@ -1,0 +1,4 @@
+interface:
+  display_name: "Obsidian Knowledge Organizer"
+  short_description: "Distill captures into linked, reusable knowledge"
+  default_prompt: "Use $obsidian-inbox-organizer to organize new captures and update affected Sources, Knowledge, and ready-to-paste prompts."
