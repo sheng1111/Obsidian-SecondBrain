@@ -10,7 +10,7 @@
 ## 1. Preflight
 
 1. Use Obsidian CLI to list the fixed scope and inspect properties, search results, aliases, backlinks, outgoing links, and unresolved links. Record Git status and folder counts for a full refactor.
-2. From the vault root, run:
+2. Resolve the inventory script relative to the installed `SKILL.md` and run it against the vault root. For a standard project installation, run:
 
    ```bash
    python3 .agents/skills/obsidian-inbox-organizer/scripts/preflight_inventory.py . --pretty

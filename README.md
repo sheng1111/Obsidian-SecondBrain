@@ -6,6 +6,7 @@
 
 <p align="center">
   <a href="https://obsidian.md/"><img alt="Built for Obsidian" src="https://img.shields.io/badge/Built_for-Obsidian-7C3AED?style=flat-square&amp;logo=obsidian&amp;logoColor=white"></a>
+  <a href="https://www.skills.sh/sheng1111/obsidian-secondbrain/obsidian-inbox-organizer"><img alt="Install the Agent Skill" src="https://img.shields.io/badge/Install-Agent_Skill-4F46E5?style=flat-square"></a>
   <a href="#codex"><img alt="Works with Codex" src="https://img.shields.io/badge/Works_with-Codex-111827?style=flat-square"></a>
   <a href="#claude-code"><img alt="Works with Claude Code" src="https://img.shields.io/badge/Works_with-Claude_Code-D97757?style=flat-square&amp;logo=anthropic&amp;logoColor=white"></a>
   <a href="#cursor"><img alt="Works with Cursor" src="https://img.shields.io/badge/Works_with-Cursor-111111?style=flat-square&amp;logo=cursor&amp;logoColor=white"></a>
@@ -71,7 +72,9 @@ graph TD
 
 No database, hosted service, embedding provider, or API key is required for the basic workflow.
 
-## Start a new second brain
+## Get started
+
+### New vault: use the complete template
 
 ```bash
 git clone https://github.com/sheng1111/Obsidian-SecondBrain.git
@@ -85,6 +88,30 @@ cd Obsidian-SecondBrain
 5. Tell the agent: `Organize my Inbox.`
 
 You can capture in any language. Public project instructions are English, while organized notes should follow the language and conventions already used by the vault.
+
+### Existing vault: install only the organizer skill
+
+Open a terminal at the root of your existing Obsidian vault and run:
+
+```bash
+npx skills add sheng1111/Obsidian-SecondBrain@obsidian-inbox-organizer
+```
+
+This route requires Node.js and npm. The open-source [Agent Skills CLI](https://github.com/vercel-labs/skills) detects supported agents or lets you choose a target. For a non-interactive project installation shared by Codex, Claude Code, and Cursor, run:
+
+```bash
+npx skills add sheng1111/Obsidian-SecondBrain@obsidian-inbox-organizer -a codex -a claude-code -a cursor -y
+```
+
+Then paste this request into your agent:
+
+```text
+Use the obsidian-inbox-organizer skill. Initialize this vault conservatively for the Obsidian SecondBrain workflow: preserve every existing note and Obsidian setting, create only missing lifecycle folders, and then organize 00 Inbox.
+```
+
+This installs the skill at project scope; it does not replace existing notes, copy this repository's privacy rules, or publish vault content. Review any third-party skill before use because it runs with the permissions of your agent. Update installed skills later with `npx skills update obsidian-inbox-organizer`.
+
+[View the organizer on skills.sh](https://www.skills.sh/sheng1111/obsidian-secondbrain/obsidian-inbox-organizer). Cursor users can also open **Customize → Skills**, import from GitHub, and paste the [direct skill URL](https://github.com/sheng1111/Obsidian-SecondBrain/tree/main/.agents/skills/obsidian-inbox-organizer).
 
 ## Capture from your phone with Sync
 
