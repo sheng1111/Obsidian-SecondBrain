@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="560" viewBox="0 0 1280 560" role="img" aria-labelledby="title desc">
+  <title id="title">Obsidian SecondBrain</title>
+  <desc id="desc">An abstract knowledge network connects captures, sources, projects, and prompts to a central knowledge core.</desc>
+  <defs>
+    <linearGradient id="background" x1="80" y1="40" x2="1200" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#11182D"/>
+      <stop offset="0.52" stop-color="#0B1021"/>
+      <stop offset="1" stop-color="#080B16"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="720" y1="110" x2="1160" y2="450" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#9B87F5"/>
+      <stop offset="0.48" stop-color="#5F7CFF"/>
+      <stop offset="1" stop-color="#22D3C5"/>
+    </linearGradient>
+    <radialGradient id="core" cx="0" cy="0" r="1" gradientTransform="translate(966 278) rotate(90) scale(82)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#293A74"/>
+      <stop offset="0.6" stop-color="#18244A"/>
+      <stop offset="1" stop-color="#11182D"/>
+    </radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#AFC1FF" stroke-opacity="0.05"/>
+    </pattern>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="560" rx="32" fill="url(#background)"/>
+  <rect x="1" y="1" width="1278" height="558" rx="31" fill="none" stroke="#FFFFFF" stroke-opacity="0.10"/>
+  <rect width="1280" height="560" rx="32" fill="url(#grid)"/>
+  <circle cx="1080" cy="50" r="250" fill="#6E56CF" fill-opacity="0.07"/>
+  <circle cx="1190" cy="520" r="270" fill="#13B8A6" fill-opacity="0.05"/>
+
+  <g font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+    <rect x="72" y="74" width="226" height="32" rx="16" fill="#9B87F5" fill-opacity="0.12" stroke="#A899FF" stroke-opacity="0.35"/>
+    <circle cx="92" cy="90" r="4" fill="#A899FF"/>
+    <text x="108" y="95" fill="#C8BEFF" font-size="12" font-weight="700" letter-spacing="1.8">LOCAL-FIRST SYSTEM</text>
+
+    <text x="72" y="190" fill="#F7F8FF" font-size="63" font-weight="760" letter-spacing="-2.6">Obsidian</text>
+    <text x="72" y="254" fill="url(#accent)" font-size="63" font-weight="760" letter-spacing="-2.6">SecondBrain</text>
+    <text x="75" y="302" fill="#AAB4D1" font-size="20" font-weight="450">Turn everyday fragments into connected knowledge.</text>
+
+    <g transform="translate(72 352)">
+      <rect width="116" height="42" rx="12" fill="#FFFFFF" fill-opacity="0.055" stroke="#FFFFFF" stroke-opacity="0.12"/>
+      <text x="58" y="27" text-anchor="middle" fill="#D8DEF2" font-size="13" font-weight="650" letter-spacing="1.2">CAPTURE</text>
+      <path d="M126 21H151" stroke="#596889" stroke-width="1.5"/>
+      <path d="m146 16 5 5-5 5" fill="none" stroke="#7583A3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="161" width="116" height="42" rx="12" fill="#FFFFFF" fill-opacity="0.055" stroke="#FFFFFF" stroke-opacity="0.12"/>
+      <text x="219" y="27" text-anchor="middle" fill="#D8DEF2" font-size="13" font-weight="650" letter-spacing="1.2">DISTILL</text>
+      <path d="M287 21H312" stroke="#596889" stroke-width="1.5"/>
+      <path d="m307 16 5 5-5 5" fill="none" stroke="#7583A3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="322" width="116" height="42" rx="12" fill="#FFFFFF" fill-opacity="0.055" stroke="#FFFFFF" stroke-opacity="0.12"/>
+      <text x="380" y="27" text-anchor="middle" fill="#D8DEF2" font-size="13" font-weight="650" letter-spacing="1.2">REUSE</text>
+    </g>
+
+    <text x="74" y="466" fill="#7783A3" font-size="14" font-weight="500" letter-spacing="0.5">Sources / Knowledge / Projects / Prompt Templates</text>
+  </g>
+
+  <g fill="none" stroke-linecap="round">
+    <path d="M966 278C896 202 833 156 760 139" stroke="#866FF2" stroke-opacity="0.72" stroke-width="2"/>
+    <path d="M966 278C998 207 1052 160 1118 131" stroke="#6E7EFF" stroke-opacity="0.72" stroke-width="2"/>
+    <path d="M966 278C1067 254 1132 264 1194 307" stroke="#4E93F8" stroke-opacity="0.72" stroke-width="2"/>
+    <path d="M966 278C1040 351 1080 401 1111 445" stroke="#2EC7BE" stroke-opacity="0.72" stroke-width="2"/>
+    <path d="M966 278C896 360 844 403 777 435" stroke="#4AAAD9" stroke-opacity="0.72" stroke-width="2"/>
+    <path d="M966 278C877 278 818 277 742 291" stroke="#7486F1" stroke-opacity="0.72" stroke-width="2"/>
+    <path d="M760 139C877 97 1008 88 1118 131" stroke="#6274D9" stroke-opacity="0.22" stroke-width="1.5" stroke-dasharray="5 9"/>
+    <path d="M742 291C740 356 747 397 777 435" stroke="#4A9CB7" stroke-opacity="0.22" stroke-width="1.5" stroke-dasharray="5 9"/>
+    <path d="M1118 131C1191 175 1214 233 1194 307" stroke="#527CDC" stroke-opacity="0.22" stroke-width="1.5" stroke-dasharray="5 9"/>
+    <path d="M1194 307C1185 373 1156 415 1111 445" stroke="#32AEB2" stroke-opacity="0.22" stroke-width="1.5" stroke-dasharray="5 9"/>
+  </g>
+
+  <g filter="url(#glow)">
+    <circle cx="966" cy="278" r="91" fill="none" stroke="url(#accent)" stroke-opacity="0.20"/>
+    <circle cx="966" cy="278" r="70" fill="url(#core)" stroke="url(#accent)" stroke-width="2"/>
+  </g>
+  <circle cx="966" cy="278" r="50" fill="none" stroke="#C4CCFF" stroke-opacity="0.17"/>
+  <path d="M942 278h48M966 254v48" stroke="#B8C2FF" stroke-opacity="0.32" stroke-width="1.5"/>
+  <circle cx="966" cy="278" r="8" fill="#D8DEFF"/>
+  <circle cx="966" cy="278" r="15" fill="none" stroke="#8295FF" stroke-opacity="0.8"/>
+
+  <g font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="700" letter-spacing="1.15">
+    <g>
+      <circle cx="760" cy="139" r="29" fill="#151D38" stroke="#927FF4" stroke-width="1.5"/>
+      <circle cx="760" cy="139" r="5" fill="#A894FF"/>
+      <text x="760" y="187" text-anchor="middle" fill="#AEB8D7">CAPTURES</text>
+    </g>
+    <g>
+      <circle cx="1118" cy="131" r="29" fill="#151D38" stroke="#7185FF" stroke-width="1.5"/>
+      <path d="M1108 124h20M1108 131h15M1108 138h18" stroke="#91A0FF" stroke-width="2"/>
+      <text x="1118" y="179" text-anchor="middle" fill="#AEB8D7">SOURCES</text>
+    </g>
+    <g>
+      <circle cx="1194" cy="307" r="29" fill="#111C34" stroke="#5198F2" stroke-width="1.5"/>
+      <path d="m1184 308 7 7 14-16" fill="none" stroke="#72B4FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="1194" y="355" text-anchor="middle" fill="#AEB8D7">PROJECTS</text>
+    </g>
+    <g>
+      <circle cx="1111" cy="445" r="29" fill="#10202F" stroke="#32C4BA" stroke-width="1.5"/>
+      <path d="M1102 437h18v14h-10l-5 5v-5h-3z" fill="none" stroke="#59DDD2" stroke-width="2" stroke-linejoin="round"/>
+      <text x="1111" y="493" text-anchor="middle" fill="#AEB8D7">PROMPTS</text>
+    </g>
+    <g>
+      <circle cx="777" cy="435" r="29" fill="#112034" stroke="#4EAFD1" stroke-width="1.5"/>
+      <path d="M768 428h18v17h-18zM772 424h18v17" fill="none" stroke="#6BC9E7" stroke-width="2" stroke-linejoin="round"/>
+      <text x="777" y="483" text-anchor="middle" fill="#AEB8D7">CONTEXT</text>
+    </g>
+    <g>
+      <circle cx="742" cy="291" r="29" fill="#141C38" stroke="#7186EF" stroke-width="1.5"/>
+      <circle cx="734" cy="286" r="4" fill="#8FA1FF"/>
+      <circle cx="750" cy="296" r="4" fill="#8FA1FF"/>
+      <path d="m738 288 8 5" stroke="#8FA1FF" stroke-width="2"/>
+      <text x="742" y="339" text-anchor="middle" fill="#AEB8D7">LINKS</text>
+    </g>
+  </g>
+
+  <g font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" text-anchor="middle">
+    <text x="966" y="335" fill="#D8DEFF" font-size="10" font-weight="750" letter-spacing="1.5">KNOWLEDGE CORE</text>
+  </g>
+</svg>

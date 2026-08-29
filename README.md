@@ -1,5 +1,19 @@
 # Obsidian SecondBrain
 
+<p align="center">
+  <img src=".github/assets/obsidian-secondbrain-hero.svg" alt="Obsidian SecondBrain: everyday captures flowing into a connected knowledge core" width="100%">
+</p>
+
+<p align="center">
+  <a href="https://obsidian.md/"><img alt="Built for Obsidian" src="https://img.shields.io/badge/Built_for-Obsidian-7C3AED?style=flat-square&amp;logo=obsidian&amp;logoColor=white"></a>
+  <a href="#codex"><img alt="Works with Codex" src="https://img.shields.io/badge/Works_with-Codex-111827?style=flat-square"></a>
+  <a href="#claude-code"><img alt="Works with Claude Code" src="https://img.shields.io/badge/Works_with-Claude_Code-D97757?style=flat-square&amp;logo=anthropic&amp;logoColor=white"></a>
+  <a href="#cursor"><img alt="Works with Cursor" src="https://img.shields.io/badge/Works_with-Cursor-111111?style=flat-square&amp;logo=cursor&amp;logoColor=white"></a>
+  <a href="#privacy-by-default"><img alt="Local-first" src="https://img.shields.io/badge/Data-local--first-0369A1?style=flat-square"></a>
+  <a href="#privacy-by-default"><img alt="Personal notes are ignored by Git" src="https://img.shields.io/badge/Personal_notes-Git_ignored-334155?style=flat-square"></a>
+  <a href="LICENSE"><img alt="MIT License" src="https://img.shields.io/badge/License-MIT-0F766E?style=flat-square"></a>
+</p>
+
 An agent-maintained Obsidian vault that turns low-friction captures into connected, verifiable, reusable knowledge.
 
 Drop rough notes, URLs, screenshots, PDFs, videos, or work updates into `00 Inbox`. Then ask Codex, Claude Code, or Cursor to organize the vault. The included skill reads the source material, removes noise, checks for duplicates, updates canonical notes, connects related ideas, and turns suitable Knowledge into ready-to-paste prompts for other AI applications.
@@ -172,3 +186,7 @@ This repository currently provides the vault skeleton, cross-agent instructions,
 ## License
 
 Obsidian SecondBrain is available under the [MIT License](LICENSE).
+
+## Brand notice
+
+The banner and diagrams in this repository are original project assets. Compatibility badges are rendered by [Shields.io](https://shields.io/) and use [Simple Icons](https://simpleicons.org/) where available. Product names and brand marks appear only to identify compatibility. Obsidian SecondBrain is an independent project and is not affiliated with or endorsed by Obsidian, OpenAI, Anthropic, or Cursor. All third-party trademarks belong to their respective owners.
